@@ -1,0 +1,40 @@
+body {
+
+}
+
+.menu{
+  display:flex;
+  justify-content: space-around;
+  
+  margin-bottom: 50px;
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.menu__link:hover {
+  color: #9c9c9c;
+  transition: .5s;
+}
+
+
+.photo-menu{
+  display:flex;
+  justify-content: space-around;
+}
+
+.photo-menu__block{
+  
+}
+
+.photo-menu__img{
+  max-width: 100%;
+  height: auto;
+}
