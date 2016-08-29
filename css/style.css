@@ -6,30 +6,33 @@ body {
 .menu {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom:55px;
   font-family: 'Open Sans', sans-serif;
   list-style: none;
 }
 
 .menu__link {
-  text-decoration: underline;
+  text-decoration: none;
   color: #3c3c3c;
   margin: 0 150px;
+  
+  transition: color .5s;
 }
+
+.menu__link:hover {
+  color: #9c9c9c;
+}
+
 
 .menu__links{
   font-size: 1rem;
 }
 
-.menu__link:hover {
-  color: #9c9c9c;
-  transition: .5s;
-}
 
 .logo {
-  width: 250px;
+  width: 450px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .logo__img {
@@ -62,6 +65,8 @@ body {
   flex-direction:column;
   
   opacity: 0;
+  transition:opacity .4s;
+  
   position:absolute;
   width: 100%;
   height: 100%;
@@ -72,7 +77,7 @@ body {
 }
 
 .photo-menu__block:hover .photo-menu__descr{
-  transition: .4s;
+  ;
   opacity: 1;
 }
 
