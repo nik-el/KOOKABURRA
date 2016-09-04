@@ -5,7 +5,7 @@ body {
 
 .menu {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-content: center;
   margin-bottom:55px;
   font-family: 'Open Sans', sans-serif;
@@ -15,7 +15,6 @@ body {
 .menu__link {
   text-decoration: none;
   color: #3c3c3c;
-  margin: 0 90px;
   
   transition: color .5s;
 }
@@ -60,6 +59,7 @@ body {
 
 .photo-menu__block {
   position: relative;
+
 }
 
 .photo-menu__img {
@@ -116,8 +116,35 @@ body {
 }
 
 
+/** MODEL **/
 
-hr{
-  color: #3c3c3c;
-  width: 90%;
+.model-page {
+  display: flex;
+  justify-content:space-around
+    ;
+}
+
+.model-page__img-block{
+  max-width: 600px;
+}
+
+.model-page__img{
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+
+.model-page__text-block{
+  width: 600px;
+}
+
+.model-page__title{
+  font-weight: 300;
+  font-size: 1.9rem;
+}
+
+.model-page__descr{
+  font-size: 1.2rem;
+  font-weight: 300;
 }
