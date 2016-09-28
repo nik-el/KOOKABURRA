@@ -140,20 +140,21 @@ body {
 
 
 .model-page__text-block{
-  padding: 0 100px;
+  padding: 0 70px;
   width: 50%;
 }
 
 .model-page__title{
   font-weight: 300;
-  font-size: 1.9rem;
+  font-size: 4rem;
 }
 
 .model-page__descr{
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 300;
+
 }
 .model-page__descr--special {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 
 }
