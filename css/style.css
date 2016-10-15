@@ -1,6 +1,8 @@
+html{
+  font-size: 17px;
+}
 body {
   margin-top: 15px;
-  font-size: 10px;
 }
 
 .menu {
@@ -38,7 +40,7 @@ body {
 
 
 .logo {
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
   margin-bottom: 55px;
 }
@@ -143,20 +145,25 @@ body {
 .model-page {
   display: flex;
   flex-wrap:wrap;
-  justify-content:space-between;
-  padding: 0px 20px;
+  flex-basis: 500px;
+  justify-content: space-around;
+
+  
+
+
 }
 
 .model-page__img-block{
   position: relative;
-  max-width: 50%;
-  
-  padding: 0px 0px;
-  margin-right: 0px;
-  margin-bottom: 30px;
+  max-width: 46%;
+  margin: 2% 20px;
+
+
+
 }
 
 .model-page__img-block--full{
+
   max-width: 100%;
 }
 
@@ -220,9 +227,42 @@ body {
 .info-pic{
   display: block;
   position: absolute;
-  top:5px;
-  right: 5px;
+  top:15px;
+  right: 15px;
   
-  opacity: .5;
+  opacity: .8;
+    transition:opacity .4s;
+}
 
+.model-page__img-block:hover .info-pic{
+    opacity: 0;
+}
+
+
+
+
+@media (max-width: 1000px){
+  
+.model-page__img-block{
+  max-width: 100%;
+  margin: 2% 0px;
+}
+.model-page__text-block{
+    opacity: 1;
+}
+  .info-pic{
+  opacity: 0;
+  }
+}
+
+
+@media (max-width: 500px){
+  
+  html{
+  font-size: 15px;
+  }
+  
+  .menu__links{
+  font-size: 1rem;
+}
 }
