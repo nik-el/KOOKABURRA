@@ -254,12 +254,26 @@ body {
 
 
 .catalog__item{
-  padding: 0 10px;
+  margin: 20px;
+  position: relative;
 }
 
 .catalog__img {
   max-width: 100%;
 }
+
+.catalog__img--sub{
+  position: absolute;
+  top:0;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.catalog__item:hover .catalog__img--sub{
+  opacity: 1;
+}
+
+
 
 /**  ABOUT **/
 .about{
@@ -313,3 +327,26 @@ body {
 }
 
 
+@media (max-width: 1000px) {
+    .about-text{width: 60%;
+}
+  
+}
+
+
+
+@media (max-width: 500px) {
+    .about-text{
+      width: 100%;
+}
+  
+  .about-text__title {
+
+  background-image: url(../img/bg-about-small.jpg);
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+
+}
+  
+}
