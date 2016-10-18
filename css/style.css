@@ -3,18 +3,19 @@ html {
 }
 
 body {
-  margin-top: 15px;
   font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+/** HEADER **/
 
 .menu {
   display: flex;
   justify-content: space-around;
-  align-content: center;
-  margin-bottom: 45px;
   font-family: 'Open Sans', sans-serif;
   list-style: none;
-  
   padding: 0px;
 }
 
@@ -32,24 +33,46 @@ body {
   font-size: 1rem;
 }
 
-.front-content {
-  display: flex;
-  height: 80vh;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-}
-
 .logo {
   max-width: 450px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .logo__img {
   max-width: 100%;
   height: auto;
 }
+
+
+
+
+/** FOOTER **/
+
+footer {
+  border-top: 1px solid rgba(0,0,0,.2);
+  display: flex;
+  justify-content: flex-end;
+  
+
+  padding: 20px 2% 30px 7%;
+  
+}
+
+
+
+/** INDEX **/
+
+.front-content {
+  display: flex;
+    flex-grow: 1;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  
+
+}
+
 
 .photo-menu {
   margin: 0px 0px;
@@ -65,19 +88,18 @@ body {
 .photo-menu__img {
   display: block;
   max-width: 100%;
-  height: auto;
+
 }
 
-.photo-menu__descr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.photo-menu__text {
+
   opacity: 0;
   transition: opacity .4s;
   position: absolute;
   width: 100%;
   height: 100%;
+  
+
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, .3);
@@ -86,14 +108,14 @@ body {
 .photo-menu__img--sub {
   position: absolute;
   width: 100%;
-  height: 100%;
+
   top: 0;
   left: 0;
   opacity: 0;
   transition: opacity .4s;
 }
 
-.photo-menu__block:hover .photo-menu__descr {
+.photo-menu__block:hover .photo-menu__text {
   opacity: 1;
 }
 
@@ -101,12 +123,12 @@ body {
   opacity: 1;
 }
 
-.photo-menu__text {
+.photo-menu__descr {
   padding: 20px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 300;
-  line-height: 1.9rem;
+  line-height: 1.7rem;
   text-align: left;
   text-transform: uppercase;
   color: #ffffff;
@@ -114,12 +136,56 @@ body {
 
 .photo-menu__title {
   margin: 10px;
-  padding: 0;
+  padding-top: 40px;
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  
+
+  
+  .photo-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .photo-menu__text {
+    display: flex;
+    flex-direction: column;
+    
+
+
+    justify-content: flex-end;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, .2);
+}
+  
+  .photo-menu__title {
+
+    padding-top: 10%;
+  }
+  
+  .photo-menu__block{
+    margin: 5px;
+  }
+  
+  .photo-menu__descr{
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+    .photo-menu__descr{
+    font-weight: 400;
+    font-size: 1.3rem;
+      line-height: 2rem;
+  }
 }
 
 
@@ -128,18 +194,22 @@ body {
 .model-page {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 500px;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.model-row {
+  display: flex;
+  justify-content: center;
 }
 
 .model-page__img-block {
   position: relative;
-  max-width: 46%;
   margin: 2% 20px;
 }
 
 .model-page__img-block--full {
   max-width: 100%;
+
 }
 
 .model-page__img {
@@ -205,10 +275,11 @@ body {
   body{
     padding: 0px 5px;
   }
-  .model-page__img-block {
-    max-width: 100%;
-    margin: 2% 0px;
-  }
+  
+  .model-row {
+  display: flex;
+  flex-direction: column;
+}
   .model-page__text-block {
     opacity: 1;
   }
@@ -265,6 +336,7 @@ body {
 .catalog__img--sub{
   position: absolute;
   top:0;
+  left: 0;
   opacity: 0;
   transition: opacity .4s;
 }
@@ -349,4 +421,39 @@ body {
 
 }
   
+}
+
+
+
+
+
+/** SPRITE **/
+
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+  
+    margin: 0 5px;
+  
+  opacity: .8;
+}
+
+.sprite-email {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -5px;
+}
+
+.sprite-instagram {
+    width: 32px;
+    height: 32px;
+    background-position: -47px -5px;
+}
+
+.sprite-vk {
+    width: 32px;
+    height: 32px;
+    background-position: -89px -5px;
 }
