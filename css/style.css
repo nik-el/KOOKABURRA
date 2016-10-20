@@ -434,6 +434,79 @@ footer {
 
 
 
+/** CONTACT **/
+
+.contact {
+  display: flex;
+}
+
+.contact__img{
+  display: block;
+  max-width: 100%;
+  
+  padding-left: 20%;
+}
+
+.contact__text{
+  padding-left: 20px;
+}
+
+
+.contact-form {
+  width: 350px;
+}
+
+.contact-form__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-form__input-text {
+  margin: 10px 0;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-left: 15px;
+  height: 34px;
+  width: 100%;
+  font-size: 1.5rem;
+  border: 3px solid #e8e8e9;
+  outline: none;
+}
+
+.contact-form__input-text:focus {
+  border: 3px solid #000;
+}
+
+.contact-form__input-text--message {
+  font-size: 1.7rem;
+  height: 176px;
+}
+
+input[type=submit] {
+  background-color: #fff;
+}
+
+.contact-fotm__btn{
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  margin: 5px 6px 5px 0px;
+  padding: 4px 10px;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  border: 3px solid #fff;
+  border-color: #000;
+  cursor:pointer;
+}
+
+
 
 /** SPRITE **/
 
