@@ -17,6 +17,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   list-style: none;
   padding: 0px;
+  padding-top: 10px;
+  margin: 0px;
 }
 
 .menu__link {
@@ -36,7 +38,9 @@ body {
 .logo {
   max-width: 450px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  
+  padding: 20px 5px;
+
 }
 
 .logo__img {
@@ -55,10 +59,14 @@ footer {
   justify-content: flex-end;
   
 
-  padding: 20px 2% 30px 7%;
+  margin: 0px;
+  padding: 20px 10%;
   
 }
 
+.front-footer{
+
+}
 
 
 /** INDEX **/
@@ -171,7 +179,7 @@ footer {
   }
   
   .photo-menu__block{
-    margin: 5px;
+
   }
   
   .photo-menu__descr{
@@ -253,6 +261,7 @@ footer {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300;
+  text-align: justify;
 }
 
 
@@ -272,9 +281,7 @@ footer {
 
 @media (max-width: 1000px) {
   
-  body{
-    padding: 0px 5px;
-  }
+
   
   .model-row {
   display: flex;
@@ -326,6 +333,7 @@ footer {
 
 .catalog__item{
   margin: 20px;
+  margin-top: 0px;
   position: relative;
 }
 
@@ -435,9 +443,9 @@ footer {
     background-repeat: no-repeat;
     display: block;
   
-    margin: 0 5px;
+    margin: 0 10px;
   
-  opacity: .8;
+    opacity: .7;
 }
 
 .sprite-email {
