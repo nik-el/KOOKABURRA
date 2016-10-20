@@ -213,6 +213,7 @@ footer {
 .model-page__img-block {
   position: relative;
   margin: 2% 20px;
+  max-height: 899px;
 }
 
 .model-page__img-block--full {
