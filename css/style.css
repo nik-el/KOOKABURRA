@@ -15,10 +15,16 @@ body {
   display: flex;
   justify-content: space-around;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: .9rem;
   list-style: none;
+  text-transform: lowercase;
   padding: 0px;
   padding-top: 10px;
   margin: 0px;
+  
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .menu__link {
@@ -31,15 +37,12 @@ body {
   color: #9c9c9c;
 }
 
-.menu__links {
-  font-size: 1rem;
-}
 
 .logo {
   max-width: 450px;
   margin: 0 auto;
   
-  padding: 20px 5px;
+  padding: 30px 5px;
 
 }
 
