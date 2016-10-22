@@ -74,7 +74,7 @@ footer {
 
 /** INDEX **/
 
-.front-content {
+.center-content {
   display: flex;
     flex-grow: 1;
   flex-direction: column;
@@ -153,6 +153,8 @@ footer {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+  
+
 }
 
 @media (max-width: 1000px) {
@@ -339,9 +341,12 @@ footer {
   margin: 20px;
   margin-top: 0px;
   position: relative;
+  
+
 }
 
 .catalog__img {
+  display: block;
   max-width: 100%;
 }
 
