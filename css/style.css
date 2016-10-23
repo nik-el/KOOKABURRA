@@ -47,6 +47,7 @@ body {
 }
 
 .logo__img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -56,20 +57,30 @@ body {
 
 /** FOOTER **/
 
-footer {
+.page-footer {
   border-top: 1px solid rgba(0,0,0,.2);
   display: flex;
   justify-content: flex-end;
-  
-
   margin: 0px;
-  padding: 20px 10%;
+  padding: 10px 10%;
   
 }
 
-.front-footer{
-
+.icon-svg{
+opacity: .6;
+transition: opacity .4s;
+  width: 30px;
+  height: 30px;
+  
+  margin: 0px 5px;
 }
+
+.icon-svg:hover{
+opacity: 1;
+}
+
+
+
 
 
 /** INDEX **/
@@ -253,6 +264,7 @@ footer {
 
   font-weight: 300;
   font-size: 3.5rem;
+  line-height: 3rem;
 }
 
 .model-page__title--little {
@@ -451,6 +463,7 @@ footer {
 
 .contact {
   display: flex;
+  justify-content: center;
 }
 
 .contact__img{
@@ -461,93 +474,9 @@ footer {
 }
 
 .contact__text{
+  max-width: 30%;
   padding-left: 20px;
 }
 
 
-.contact-form {
-  width: 350px;
-}
 
-.contact-form__item {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.contact-form__input-text {
-  margin: 10px 0;
-  margin-bottom: 20px;
-  padding-top: 5px;
-  padding-left: 15px;
-  height: 34px;
-  width: 100%;
-  font-size: 1.5rem;
-  border: 3px solid #e8e8e9;
-  outline: none;
-}
-
-.contact-form__input-text:focus {
-  border: 3px solid #000;
-}
-
-.contact-form__input-text--message {
-  font-size: 1.7rem;
-  height: 176px;
-}
-
-input[type=submit] {
-  background-color: #fff;
-}
-
-.contact-fotm__btn{
-  display: inline-block;
-  vertical-align: top;
-  width: auto;
-  margin: 5px 6px 5px 0px;
-  padding: 4px 10px;
-  font-weight: 800;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000;
-  border: 3px solid #fff;
-  border-color: #000;
-  cursor:pointer;
-}
-
-
-
-/** SPRITE **/
-
-
-.sprite {
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-  
-    margin: 0 10px;
-  
-    opacity: .7;
-}
-
-.sprite-email {
-    width: 32px;
-    height: 32px;
-    background-position: -5px -5px;
-}
-
-.sprite-instagram {
-    width: 32px;
-    height: 32px;
-    background-position: -47px -5px;
-}
-
-.sprite-vk {
-    width: 32px;
-    height: 32px;
-    background-position: -89px -5px;
-}
