@@ -61,37 +61,55 @@ body {
 /** FOOTER **/
 
 .page-footer {
-
-
+  border-top: 2px solid rgba(0,0,0,.15);
   display: flex;
-  justify-content: center;;
+  justify-content: flex-end;
+}
 
-
+.copyright__text{
+  font-weight: 400;
+  font-size: .7rem;
+  line-height: 30px;
+  margin-right: 50px;
+  
+  white-space: nowrap;
+  
 }
 
 .icon{
-  width: 450px;
-  border-top: 1px solid rgba(0,0,0,.2);
+ 
   display: flex;
   justify-content: flex-end;
-  padding: 10px 10px;
+  margin-right: 5%;
+  
+
 }
 
 .icon__link{
-  display: block;
+  display: inline-block;
+  height: 25px;
+  margin: 2px 2px;
 }
+
 
 .icon__svg{
   fill: #000;
   transition: fill .4s;
-  width: 30px;
-  height: 30px;
-  
-  padding: 0px 2px;
+  width: 25px;
+  height: 25px;
+
 }
 
-.icon__link:hover .icon__svg{
-  fill: #7f7f7f;
+.icon__link:hover .icon__svg--1{
+  fill: #009735;
+}
+
+.icon__link:hover .icon__svg--2{
+  fill: #fbc440;
+}
+
+.icon__link:hover .icon__svg--3{
+  fill: #b22929;
 }
 
 /** INDEX **/
