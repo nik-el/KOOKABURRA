@@ -62,30 +62,36 @@ body {
 
 .page-footer {
 
+
   display: flex;
-  justify-content: flex-end;
-  margin: 0px;
-  padding: 10px 14%;
-  padding-top: 20px;
+  justify-content: center;;
+
+
 }
 
-.page-footer__social-link{
+.icon{
+  width: 450px;
+  border-top: 1px solid rgba(0,0,0,.2);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px;
+}
+
+.icon__link{
   display: block;
 }
 
-.icon-svg{
-  opacity: .4;
-  transition: opacity .4s;
-  width: 25px;
-  height: 25px;
+.icon__svg{
+  fill: #000;
+  transition: fill .4s;
+  width: 30px;
+  height: 30px;
   
-  margin: 0px 5px;
+  padding: 0px 2px;
 }
 
- .page-footer__social-link:hover .icon-svg{
-     width: 25px;
-  height: 25px;
-  opacity: .85;
+.icon__link:hover .icon__svg{
+  fill: #7f7f7f;
 }
 
 /** INDEX **/
