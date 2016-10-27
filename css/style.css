@@ -12,6 +12,14 @@ body {
   margin: 0 auto;
 }
 
+.contact-full{
+  background-image: url(../img/contact-full.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  color: #fff;
+}
 /** HEADER **/
 
 .menu {
@@ -34,6 +42,10 @@ body {
   text-decoration: none;
   color: #3c3c3c;
   transition: color .5s;
+}
+
+.menu__link--w {
+  color:rgba(255,255,255,1);
 }
 
 .menu__link:hover {
@@ -64,6 +76,11 @@ body {
   border-top: 2px solid rgba(0,0,0,.15);
   display: flex;
   justify-content: flex-end;
+  padding: 5px 0px;
+}
+
+.page-footer--w{
+  border-color: rgba(255,255,255,0);
 }
 
 .copyright__text{
@@ -81,12 +98,19 @@ body {
   justify-content: flex-end;
   margin-right: 5%;
   
-
 }
 
+.icon--contact{
+  margin: 0;
+  justify-content: flex-start;
+}
+
+
+
+
 .icon__link{
-  display: inline-block;
-  height: 25px;
+  display: block;
+
   margin: 2px 2px;
 }
 
@@ -96,8 +120,34 @@ body {
   transition: fill .4s;
   width: 25px;
   height: 25px;
+}
+
+.icon__svg--w{
+  fill: rgba(255,255,255,.8);
+  transition: fill .4s;
+  width: 25px;
+  height: 25px;
+}
+
+.icon__svg--contact{
+  fill: rgba(0,0,0,.8);
+  transition: fill .4s;
+  width: 50px;
+  height: 50px;
+  
+  padding: 0px 20px;
 
 }
+.icon__svg--contact{
+  fill: rgba(255,255,255,.7);
+  transition: fill .4s;
+  width: 50px;
+  height: 50px;
+  
+  margin-top: 30px;
+
+}
+
 
 
 
@@ -105,15 +155,24 @@ body {
   fill: rgba(0,0,0,.4);
 }
 
+.icon__link:hover .icon__svg--w{
+  fill: rgba(255,255,255,1);
+}
+
+.icon__link:hover .icon__svg--contact{
+  fill: rgba(255,255,255,1);
+}
+
 /** INDEX **/
 
 .center-content {
   display: flex;
     flex-grow: 1;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
+  align-items: center;
   justify-content: center;
-  
+
 
 }
 
@@ -474,11 +533,23 @@ body {
 
 
 /** CONTACT **/
+.center-content--contact{
+
+  
+}
+
 
 .contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+
+  
 }
+
+
 
 .contact__img{
   display: block;
@@ -486,11 +557,25 @@ body {
 }
 
 .contact__text{
-  max-width: 30%;
-  padding-left: 20px;
-  
+  max-width: 40%;
   text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  
+  text-transform: uppercase;
 }
 
 
 
+@media (max-width: 500px) {
+    .contact{
+      padding-bottom: 50px;}
+      
+      .contact__text{
+  max-width: 90%;
+  text-align: center;
+}
+}
+  
