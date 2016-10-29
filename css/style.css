@@ -207,14 +207,12 @@ body {
 }
 
 .photo-menu__text {
-
+  
   opacity: 0;
   transition: opacity .4s;
   position: absolute;
   width: 100%;
   height: 100%;
-  
-
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, .3);
@@ -222,12 +220,11 @@ body {
 
 .photo-menu__img--sub {
   position: absolute;
-
-
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity .4s;
+ 
+
 }
 
 .photo-menu__block:hover .photo-menu__text {
