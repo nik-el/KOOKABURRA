@@ -88,11 +88,11 @@ body {
 }
 
 .copyright__text{
-  font-weight: 300;
-  font-size: .9rem;
+  font-weight: 400;
+  font-size: .7rem;
   line-height: 26px;
-  margin-right: 50px;
-  text-transform: lowercase;
+  margin-right: 25px;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
