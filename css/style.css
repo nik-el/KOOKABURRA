@@ -62,19 +62,26 @@ main {
 }
 
 .header-top_link{
-
-  
-  font-size: .8rem;
-  font-weight: 300;
-
-  text-transform: lowercase;
+  font-size: .7rem;
+  font-weight: 400;
+  text-transform: uppercase;
   text-decoration: none;
   color: #3c3c3c;
   transition: color .5s;
+  vertical-align:top;
+}
+
+
+.header-top_link--w{
+    color: rgba(255, 255, 255, .8);
 }
 
 .header-top_link:hover {
   color: #9c9c9c;
+}
+
+.header-top_link--w:hover{
+  color: rgba(255, 255, 255, 1);
 }
 
 .menu__link {
